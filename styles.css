@@ -1,0 +1,828 @@
+/* Основные стили для страницы */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+    text-decoration: none;
+
+}
+
+body {
+    background-color: rgba(40, 40, 41, 1);
+}
+
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container-submit {
+    height: 730px;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    background-color: rgba(255, 255, 255);
+    border-radius: 20px;
+    padding: 2em 4em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.form-submit {
+    flex: 0.6;
+    position: relative;
+    z-index: 2;
+}
+
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.image-container img {
+    position: absolute;
+    object-fit: cover;
+}
+
+.image4 {
+    min-height: 120%;
+    top: -110px;
+    position: absolute;
+    right: 100px;
+    z-index: 3;
+    bottom: 0;
+    clip-path: inset(0 0 35px 0);
+}
+
+.image5 {
+    left: 300px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Стили для формы */
+form > * {
+    color: rgba(56, 83, 93, 1);
+    padding: 10px;
+    margin: 10px 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > button {
+    background-color: rgba(40, 40, 41, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Дополнительные стили для навигации и прочего */
+.hero {
+    height: 1000px;
+    background-color: rgba(34, 34, 34, 1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-menu {
+    display: flex;
+    margin-right: 50px;
+    padding-left: 50px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%; /* Убедитесь, что меню занимает всю ширину */
+    z-index: 1000; /* Убедитесь, что меню находится поверх других элементов */
+    background-color: rgb(34, 34, 34, 0.3); /* Убедитесь, что фон меню виден */
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    align-items: baseline;
+    padding: 10px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5em;
+}
+
+ul li a:hover {
+    color: #ddd;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.wrapper-header {
+    margin: 50px 0;
+    padding-left: 185px;
+
+}
+
+h2 {
+    font-size: 2.5em;
+    font-family: Prata, serif;
+}
+
+.wrapper-header > * {
+    margin: 25px 0;
+    padding-bottom: 10px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    white-space: nowrap;
+}
+
+a {
+    font-size: 0.4em;
+}
+
+ul.features {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+ul.features li {
+    position: relative;
+    padding-left: 2.5em;
+    margin-bottom: 0.5em;
+    background-color: rgba(40, 40, 41, 0.7);
+    border-radius: 5px;
+    font-size: 0.6em;
+
+}
+
+ul.features li::before {
+    content: url('image/tick_ssoz1sn9kkb8 2.svg');
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+
+}
+
+.Building1 {
+    width: 50%; /* Ширина блока 50% от родителя */
+    height: 100%; /* Высота блока 100% от родителя */
+    background-image: url('image/StockSnap_FVWLQXWZ1P.webp'); /* Фоновое изображение */
+    background-repeat: no-repeat; /* Не повторять изображение */
+    background-position: center; /* Центрируем изображение по горизонтали и вертикали */
+    background-size: cover; /* Масштабируем изображение, чтобы оно полностью покрывало блок */
+}
+
+.logo {
+    font-family: Prata, serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+h1 {
+    font-family: Prata, serif;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 96px;
+    text-align: left;
+}
+
+.content > .container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.layer {
+    height: 100px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.details > li {
+    border-bottom: rgba(85, 86, 90, 1) solid 1px;
+    position: relative;
+    padding: 20px 100px;
+    align-content: center;
+}
+
+.details > li:last-child {
+    border-bottom: none;
+}
+
+.details li::before {
+    content: url('image/Exclude.svg');
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2em;
+    height: 2em;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+body > section.content > div > div.center-content > a {
+    padding: 20px;
+}
+
+.Building2 {
+    min-width: 300px;
+    background-image: url('image/StockSnap_64EKVZ4V2B.webp');
+    background-repeat: no-repeat;
+    background-position: 100% 60%;
+    background-size: cover;
+}
+
+.Building3 {
+    min-width: 300px;
+    background-image: url('image/StockSnap_HMPNPRBUJ7.webp');
+    background-repeat: no-repeat;
+    background-position: 100% 60%;
+    background-size: cover;
+}
+
+.content {
+    height: 730px;
+}
+
+.hero > * {
+    width: 50%;
+}
+
+.container > * {
+    width: 100%;
+}
+
+.button-header {
+    padding: 1em 1.8em;
+    background-color: white;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.6em;
+    border-radius: 5px;
+}
+
+.container-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button-content {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    border-radius: 5px;
+
+}
+
+input {
+    border: 2px solid rgba(214, 214, 214, 1);
+}
+
+button {
+    font-family: Arial, serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+
+}
+
+input {
+    padding-left: 30px;
+    font-family: Arial, serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+}
+
+label {
+    font-family: Arial, serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+}
+
+label > input {
+    height: 1em;
+    width: 1em;
+}
+
+.footer {
+    display: flex;
+    background-color: rgba(34, 34, 34, 1);
+}
+
+.footer-nav {
+    height: 100px;
+    width: 100%;
+    font-family: Arial, serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-align: right;
+    align-items: center;
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    align-content: center;
+    padding: 0 10em;
+}
+
+
+.footer-ul {
+    justify-content: space-evenly;
+
+}
+
+.button-footer {
+    padding: 1em 1.8em;
+    background-color: white;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.6em;
+
+    font-style: italic;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.footer-info {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
+}
+
+.layer1, .layer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 3em;
+    align-content: center;
+
+}
+
+.layer2 > a {
+    font-family: Arial, serif;
+    font-weight: 400;
+    font-size: 0.5em;
+    color: rgba(213, 201, 190, 1);
+    text-decoration: none;
+    align-content: center;
+
+}
+
+.layer1 > * {
+    align-content: center;
+
+}
+
+.layer1 > p {
+    font-family: Prata, serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.container-footer {
+    width: 100%;
+}
+
+.social-media > a > img {
+    margin: 0.5em;
+
+}
+
+.testimonials {
+    padding: 50px 0;
+    background-color: #282829;
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+
+}
+
+.testimonial-slider {
+    display: flex;
+    width: 500%;
+    animation: slide 40s infinite;
+}
+
+.slide {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide blockquote {
+    font-size: 1.2em;
+    font-style: italic;
+    margin: 0 0 10px;
+}
+
+.slide p {
+    font-weight: bold;
+    margin: 0;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-40%);
+    }
+    40% {
+        transform: translateX(-140%);
+    }
+    60% {
+        transform: translateX(-240%);
+    }
+    80% {
+        transform: translateX(-340%);
+    }
+    100% {
+        transform: translateX(-440%);
+    }
+}
+
+/* Мобильные телефоны (портретная ориентация) */
+@media (min-width: 320px) and (max-width: 730px) {
+    * {
+        font-size: 0.8rem;
+    }
+
+    .layer {
+        height: 50px;
+    }
+
+    .header-menu {
+        margin: 0;
+        padding: 0;
+        padding-left: 10px;
+        flex-direction: row; /* Горизонтальное выравнивание элементов меню */
+        position: fixed;
+        top: 0; /* Зафиксируйте меню в верхней части окна */
+        width: 100%; /* Убедитесь, что меню занимает всю ширину */
+        z-index: 1000; /* Убедитесь, что меню находится поверх других элементов */
+        background-color: rgb(34, 34, 34, 0.3); /* Убедитесь, что фон меню виден */
+        box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Добавьте легкую тень для визуального отделения */
+    }
+
+
+    .hero {
+        height: 320px;
+    }
+
+    .button-header, .button-content, .button-footer {
+        padding: 1em 2.5em;
+        font-size: 1.2em;
+    }
+
+    .layer1 > p {
+        font-size: 2.5rem;
+    }
+
+    .footer-nav {
+        font-size: 1.2rem;
+    }
+
+    .form-section {
+        padding: 20px;
+    }
+
+    .container-submit {
+        width: 100%;
+
+    }
+
+    .container-submit {
+        height: auto;
+    }
+
+
+    .image5 {
+        display: block; /* Показываем изображение, если оно было скрыто ранее */
+    }
+
+    .image4, .Building2, .Building3 {
+        display: none;
+    }
+
+    .content {
+        height: 400px;
+        margin: 0 50px;
+    }
+
+    .wrapper-header {
+        padding: 0 4em;
+        margin: 0 0;
+        margin-top: 65px;
+    }
+
+
+    .wrapper-header > * {
+        margin: 5px 0;
+
+    }
+
+    h2 {
+        font-size: 1.5em;
+        font-family: Prata, serif;
+    }
+
+    .content > .container {
+        flex-direction: column;
+    }
+
+    .container-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start
+    }
+
+    .details > li {
+        padding: 20px 40px;
+
+    }
+
+    body > section.content > div > div.center-content > a {
+        padding: 5px;
+    }
+
+    input {
+        padding: 0 1em;
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 25px;
+        text-align: left;
+    }
+
+    button {
+        font-family: Arial, serif;
+        font-size: 0.8em;
+        font-weight: 400;
+        line-height: 1em;
+        text-align: center;
+    }
+
+    form > * {
+
+    }
+
+    .testimonial-slider {
+        max-width: 320px;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+        20% {
+            transform: translateX(-100%);
+        }
+        40% {
+            transform: translateX(-200%);
+        }
+        60% {
+            transform: translateX(-300%);
+        }
+        80% {
+            transform: translateX(-400%);
+        }
+        100% {
+            transform: translateX(-500%);
+        }
+    }
+
+    a {
+        font-size: 0.8em;
+    }
+
+    .footer-nav {
+        padding: 0 2em;
+    }
+
+    .layer1 {
+        flex-direction: column;
+    }
+
+    .social-media > a > img {
+        margin: 0.3em;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1em 1em;
+    }
+
+    .header-menu {
+        height: 25px;
+    }
+
+    .logo {
+        line-height: 10px;
+
+    }
+}
+
+/* Мобильные телефоны (пейзажная ориентация) и небольшие планшеты */
+@media (min-width: 731px) and (max-width: 1000px) {
+    * {
+        font-size: 1rem;
+    }
+
+    .layer {
+        height: 50px;
+    }
+
+    .header-menu {
+        margin: 0;
+        padding: 0;
+        padding-left: 10px;
+        flex-direction: row; /* Горизонтальное выравнивание элементов меню */
+        position: fixed;
+        top: 0; /* Зафиксируйте меню в верхней части окна */
+        width: 100%; /* Убедитесь, что меню занимает всю ширину */
+        z-index: 1000; /* Убедитесь, что меню находится поверх других элементов */
+        background-color: rgb(34, 34, 34, 0.3); /* Убедитесь, что фон меню виден */
+        box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Добавьте легкую тень для визуального отделения */
+    }
+
+    .hero {
+        height: 550px;
+    }
+
+    .button-header, .button-content, .button-footer {
+        padding: 1em 2.5em;
+        font-size: 1.2em;
+    }
+
+    .layer1 > p {
+        font-size: 2.5rem;
+    }
+
+    .footer-nav {
+        font-size: 1.2rem;
+    }
+
+    .form-section {
+        padding: 20px;
+    }
+
+    .container-submit {
+        padding: 2em;
+        width: 100%;
+
+    }
+
+    .container-submit {
+        height: auto;
+    }
+
+
+    .image5 {
+        display: block; /* Показываем изображение, если оно было скрыто ранее */
+    }
+
+    .image4, .Building2, .Building3 {
+        display: none;
+    }
+
+    .content {
+        height: 400px;
+        margin: 0 50px;
+    }
+
+    .wrapper-header {
+        padding: 4em;
+    }
+
+    .content > .container {
+        flex-direction: column;
+    }
+
+}
+
+/* Планшеты и некоторые ноутбуки */
+@media (max-width: 1080px ) and (min-width: 1000px) {
+    * {
+        font-size: 1.2rem;
+    }
+
+    .layer {
+        height: 50px;
+    }
+
+    .header-menu {
+        margin: 0;
+        padding: 0;
+        padding-left: 10px;
+        flex-direction: row; /* Горизонтальное выравнивание элементов меню */
+        position: fixed;
+        top: 0; /* Зафиксируйте меню в верхней части окна */
+        width: 90%; /* Убедитесь, что меню занимает всю ширину */
+        z-index: 1000; /* Убедитесь, что меню находится поверх других элементов */
+        background-color: rgb(34, 34, 34, 0.3); /* Убедитесь, что фон меню виден */
+        box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Добавьте легкую тень для визуального отделения */
+    }
+
+    .hero {
+        height: 700px;
+    }
+
+    .button-header, .button-content, .button-footer {
+        padding: 1em 2.5em;
+        font-size: 1.2em;
+    }
+
+    .layer1 > p {
+        font-size: 2.5rem;
+    }
+
+    .footer-nav {
+        font-size: 1.2rem;
+    }
+
+    .form-section {
+        padding: 20px;
+    }
+
+    .container-submit {
+        padding: 2em;
+        width: 100%;
+
+    }
+
+
+    .image5 {
+        display: block; /* Показываем изображение, если оно было скрыто ранее */
+    }
+
+    .image4 {
+        right: -100px;
+        clip-path: inset(0 100px 35px 0); /* Обрезает нижние 50px изображения */
+    }
+
+    .wrapper-header {
+        padding: 4em;
+    }
+
+}
